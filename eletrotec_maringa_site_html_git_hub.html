@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eletrotec Maringá | Solicitar Orçamento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0e0e0e;
+      color: #ffffff;
+    }
+    header {
+      background-color: #000000;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 2px solid #d4af37;
+    }
+    header img {
+      max-width: 200px;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      color: #d4af37;
+      margin: 0;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #d4af37;
+      margin-bottom: 20px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .service {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-left: 4px solid #d4af37;
+      border-radius: 6px;
+    }
+    .service h3 {
+      color: #d4af37;
+      margin-top: 0;
+    }
+    .box {
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 5px;
+      border: none;
+      font-size: 14px;
+    }
+    button {
+      background-color: #d4af37;
+      color: #000000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #000000;
+      text-align: center;
+      padding: 20px;
+      color: #777777;
+      font-size: 14px;
+    }
+    .notice {
+      font-size: 14px;
+      color: #cccccc;
+      margin-top: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo-removebg-preview.png" alt="Eletrotec Maringá" />
+  <h1>Eletrotec Maringá</h1>
+</header>
+
+<section>
+  <h2>Nossos Serviços</h2>
+  <div class="services">
+    <div class="service">
+      <h3>Instalação Elétrica</h3>
+      <p>Instalações elétricas residenciais com segurança e padrão técnico.</p>
+    </div>
+    <div class="service">
+      <h3>Manutenção Residencial</h3>
+      <p>Correções, reparos e adequações elétricas.</p>
+    </div>
+    <div class="service">
+      <h3>Portão Eletrônico</h3>
+      <p>Instalação e manutenção de automatizadores.</p>
+    </div>
+    <div class="service">
+      <h3>Cerca Elétrica</h3>
+      <p>Soluções em segurança para residências e comércios.</p>
+    </div>
+    <div class="service">
+      <h3>Câmeras de Segurança</h3>
+      <p>Monitoramento moderno e confiável.</p>
+    </div>
+    <div class="service">
+      <h3>Atendimento Emergencial</h3>
+      <p>Atendimento rápido para problemas elétricos urgentes.</p>
+    </div>
+  </div>
+
+  <h2>Solicitar Orçamento</h2>
+  <div class="box">
+    <form onsubmit="return false;">
+      <input type="text" placeholder="Nome completo" required />
+      <input type="text" placeholder="Cidade" required />
+      <input type="text" placeholder="Endereço" required />
+      <input type="tel" placeholder="Telefone / WhatsApp" required />
+      <select required>
+        <option value="">Selecione o serviço</option>
+        <option>Instalação Elétrica</option>
+        <option>Manutenção Residencial</option>
+        <option>Portão Eletrônico</option>
+        <option>Cerca Elétrica</option>
+        <option>Câmeras de Segurança</option>
+      </select>
+      <textarea rows="4" placeholder="Descreva sua necessidade"></textarea>
+      <button type="submit">Enviar Orçamento</button>
+    </form>
+    <p class="notice">* Versão HTML para apresentação no GitHub. Envio de dados ativo apenas na versão PHP.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Eletrotec Maringá • Alexandre Cayeiro • (44) 99861-0566</p>
+</footer>
+
+</body>
+</html>
